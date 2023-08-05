@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    accent-color: #000000;
+    background-image: url('https://cdn.jsdelivr.net/gh/MohamedAthil/threadssvg@master/bg.svg');
+    /* background-image: url('images/bg.svg'); */
+    color: #ffffff;
+    width: 100%;
+}
+
+/*nav*/
+
+.nav {
+    display: flex;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.logo {
+    margin-right: 15px;
+}
+
+.topic {
+    font-weight: 700;
+    font-size: 18.7112px;
+    line-height: 23px;
+    padding-top: 7px;
+    color: #ffffff;
+}
+
+.menu {
+    position: absolute;
+    right: 15px;
+}
+
+.navOptions {
+    display: none;
+    background: linear-gradient(149.3deg, #6B2BB7 5.93%, #150B54 91.53%);
+    color: #ffffff;
+    position: fixed;
+    z-index: 999;
+    width: 55%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+}
+
+.navOptions1 {
+    display: none;
+}
+
+.exit {
+    color: #E8E3D2;
+    position: absolute;
+    right: 5%;
+    margin-bottom: 20%;
+}
+
+.mobileA {
+    margin-top: 38%;
+    position: relative;
+}
+
+.mobileA1 {
+    display: block;
+    text-align: right;
+    margin-top: 15%
+}
+
+.threadsMenu {
+    margin-top: 185%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 6%
+}
+
+.threadsMenuTxt {
+    color: #E8E3D2;
+}
+
+/*nav ends*/
+
+
+
+.menuLogo {
+    color: #E8E3D2;
+}
+
+/*hero*/
+
+.hero {
+    padding: 15px;
+    text-align: center;
+}
+
+.line {
+    margin: auto;
+    width: 90%;
+    border: 1.25px dashed #76746F;
+  
+    border: none;
+    height: 1px;
+    background: repeating-linear-gradient(90deg,#ffffff,#ffffff 6px,transparent 6px,transparent 12px);
+  }
+
+
+.clgName {
+    font-weight: 700;
+    font-size: 14.5721px;
+    line-height: 18px;
+    /* identical to box height */
+    margin-bottom: 15px;
+
+    color: #ffffff;
+}
+
+.ad {
+    width: 95%;
+}
+
+.adDesk {
+    display: none;
+}
+
+/*adSec*/
+
+.homeFiller1 {
+    display: none;
+}
+
+.eventSec {
+    margin: 15px auto 15px auto;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.adRight1 {
+    margin-left: 4%;
+}
+
+.adTxt1 {
+    font-weight: 800;
+    font-size: 20.2991px;
+    line-height: 32px;
+
+    color: #ffffff;
+}
+.catchyTxt {
+    color: #6B2BB7;
+}
+
+.catchyTxt1 {
+    color: #d4afff;
+}
+
+
+.adDesc1 {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 10px 0px;
+    color: #ffffff;
+}
+
+.right {
+    margin: auto auto 0 1%;
+}
+
+.workshopSec {
+    margin: 15px auto 15px auto;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.register, .register1 {
+    background: linear-gradient(94.02deg, #6B2BB7 12.9%, #0E005C 86.65%);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px 8px;
+    color: #E8E3D2;
+    border: none;
+}
+
+.regisTxt {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #E8E3D2;
+}
+
+.download {
+    display: flex;
+    margin: auto;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.idTxt {
+    font-weight: 600;
+    font-size: 9.5px;
+    line-height: 13px;
+    margin-right: 5%;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dept {
+    margin-top: 5px;
+}
+
+.about {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.aboutHead {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.aboutDesc {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.logos {
+    margin: 1rem auto;
+    justify-content: center;
+    display: flex;
+    width: 70%;
+}
+
+.logos1 {
+    margin: 1rem auto;
+    justify-content: center;
+    display: flex;
+    width: 95%;
+}
+
+.logo1 {
+    padding: 0 2px;
+}
+
+.threadsLogo {
+    display: flex;
+    width: 30%;
+}
+
+.logo2 {
+    width: 60%;
+    margin: 0 1rem;
+}
+
+.topic1 {
+    font-weight: 700;
+font-size: 14.05px;
+line-height: 17px;
+
+color: #ffffff;
+
+}
+
+.logoBox {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.sct {
+    width: 40%;
+    margin-right: 5%;
+}
+
+/*footer*/
+
+.footer {
+    margin-top: 15px;
+}
+
+.footerLinks {
+    padding: 0.5rem 0;
+}
+
+.footerHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footerLogo {
+    width: 7%;
+}
+
+.footerDesc {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.footerHeadTxt {
+    font-weight: 700;
+    font-size: 11.7076px;
+    line-height: 14px;
+
+    color: #ffffff;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerOption {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+
+    color: #ffffff;
+}
+
+.line2 {
+    margin-bottom: 10%;
+}
+
+.onSpot {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 13px;
+    text-transform: uppercase;
+}
+
+.insta {
+    font-size: 12px;
+}
+
+button {
+    background: linear-gradient(94.02deg, #6B2BB7 12.9%, #0E005C 86.65%);
+}
+
+.credits {
+    border: 1px solid #ffffff;
+    width: 50%;
+    border-radius: 16px;
+    margin: 2rem auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.creditsHead {
+    font-size: 0.85rem;
+    margin: 1rem 0;
+}
+
+.creditsHead1 {
+    font-size: 0.8rem;
+    margin: 1rem 0 0.3rem 0;
+}
+
+.creditName {
+    font-size: 0.7rem;
+}
+
+/*footer ends*/
+
+@media only screen and (min-width: 1024px) {
+    .nav {
+      margin: 0 5%;
+    }
+  
+    .logo {
+      width: 2.5%;
+    }
+  
+    .topic {
+      font-weight: 700;
+      font-size: 20.5739px;
+      line-height: 25px;
+      /* identical to box height */
+  
+  
+      color: #ffffff;
+    }
+  
+    .topicHead {
+      font-size: 100%;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+  
+      color: #ffffff;
+    }
+  
+    .menu {
+      display: none;
+    }
+
+    .navOptions {
+        display: none;
+    }
+  
+    .navOptions1 {
+      display: flex;
+      align-items: center;
+      margin: auto 0 auto auto;
+      color: #ffffff;
+    }
+  
+    .navOption1 {
+      padding: 0 3rem;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .clgName {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #ffffff;
+    }
+
+    .ad {
+        display: none;
+    }
+
+    .adDesk {
+        display: inline;
+        width: 70%;
+    }
+
+    .line {
+        width: 80%;
+    }
+
+    .homeFiller {
+        display: none;
+    }
+
+    .homeFiller1 {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .adTxt1 {
+        font-weight: 800;
+        font-size: 40.6852px;
+        line-height: 50px;
+
+        color: #ffffff;
+    }
+
+    .adDesc1 {
+        font-weight: 600;
+        font-size: 15.4702px;
+        line-height: 19px;
+
+        color: #ffffff;
+    }
+
+    .btnTxt, .regisTxt {
+        font-weight: 600;
+        font-size: 13.9232px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .register {
+        margin-top: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .register1 {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .adRight1 {
+        margin: auto 0 auto 5%;
+    }
+
+    .workshopSec {
+        width: 80%;
+    }
+
+    .left {
+        margin: auto;
+    }
+
+    .idTxt {
+        font-weight: 600;
+        font-size: 16.47px;
+        line-height: 20px;
+        /* identical to box height */
+
+
+        color: #ffffff;
+    }
+
+    .about {
+        width: 80%;
+    }
+
+    .aboutHead {
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 33px;
+        /* identical to box height */
+        text-align: center;
+
+        color: #ffffff;
+    }
+
+    .aboutDesc {
+        font-weight: 600;
+        font-size: 15.47px;
+        line-height: 19px;
+
+        color: #ffffff;
+    }
+
+    .line1 {
+        display: none;
+    }
+
+    .allLogos {
+        display: flex;
+        margin-left: 5%;
+        padding: 1rem 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .logos1 {
+        margin-left: 3%;
+        justify-content: flex-start;
+    }
+
+    .logo1 {
+        margin: 0 1%;
+    }
+
+    .logos {
+        justify-content: flex-start;
+        margin-right: 5%;
+    }
+
+    .topic1 {
+        font-weight: 700;
+        font-size: 16.5175px;
+        line-height: 20px;
+
+        color: #ffffff;
+    }
+    
+    .logoBox {
+        padding-right: 3%;
+    }
+
+    /*footer responsive*/
+
+    .footer {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .footerHeadTxt {
+        font-weight: 700;
+        font-size: 17.1956px;
+        line-height: 21px;
+        /* identical to box height */
+
+
+        color: #ffffff;
+    }
+
+    .footerDesc {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #ffffff;
+    }
+
+    .footerOption {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #ffffff;
+    }
+
+    .line2 {
+        margin-bottom: 6%;
+        width: 100%;
+    }
+
+    .onSpot {
+        font-size: 1rem;
+    }
+
+    .credits {
+        border: 1px solid #ffffff;
+        width: 30%;
+        border-radius: 16px;
+        margin: 2rem auto;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .creditsHead {
+        font-size: 1rem;
+        margin: 1rem 0;
+        
+    }
+    
+    .creditsHead1 {
+        font-size: 0.8rem;
+        margin: 1rem 0 0.3rem 0;
+    }
+
+    .creditName {
+        font-size: 0.9rem;
+    }
+}

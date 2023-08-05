@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://cdn.jsdelivr.net/gh/MohamedAthil/threadssvg@master/bg.svg');
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*nav*/
+
+.nav {
+    display: flex;
+    padding: 15px;
+}
+
+.logo {
+    margin-right: 15px;
+}
+
+.topic {
+    font-weight: 700;
+    font-size: 18.7112px;
+    line-height: 23px;
+    padding-top: 7px;
+    color: #ffffff;
+}
+
+.menu {
+    position: absolute;
+    right: 15px;
+}
+
+.navOptions {
+    display: none;
+    background: linear-gradient(149.3deg, #6B2BB7 5.93%, #150B54 91.53%);
+    color: #ffffff;
+    position: fixed;
+    z-index: 999;
+    width: 55%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+}
+
+.navOptions1 {
+    display: none;
+}
+
+.exit {
+    color: #ffffff;
+    position: absolute;
+    right: 5%;
+    margin-bottom: 20%;
+}
+
+.mobileA {
+    margin-top: 38%;
+    position: relative;
+}
+
+.mobileA1 {
+    display: block;
+    text-align: right;
+    margin-top: 15%
+}
+
+.threadsMenu {
+    margin-top: 185%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    bottom: 6%
+}
+
+.threadsMenuTxt {
+    color: #ffffff;
+}
+
+/*nav ends*/
+
+.line {
+  margin: auto;
+  width: 90%;
+  border: 1.25px dashed #ffffff;
+
+  border: none;
+  height: 1px;
+  background: repeating-linear-gradient(90deg,#ffffff,#ffffff 6px,transparent 6px,transparent 12px);
+}
+
+/*hero*/
+
+.hero {
+    margin-left: 5%;
+}
+
+.workshopName {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    color: #ffffff;
+}
+
+.workshopDesc {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    padding-right: 15px;
+}
+
+.workshopDesc1 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+}
+
+.registerBtn {
+    background: linear-gradient(94.02deg, #6B2BB7 12.9%, #0E005C 86.65%);
+    border-radius: 3px;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 15px;
+
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.banner {
+    background: linear-gradient(149.3deg, #6B2BB7 5.93%, #150B54 91.53%);
+    border-radius: 16px;
+    width: 95%;
+    margin-bottom: 15px;
+    justify-content: center;
+    display: flex;
+}
+
+.details {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    width: 92.5%;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    padding-left: 0.6em;
+}
+
+.detailsTxt {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    padding-left: 10px;
+
+    color: #ffffff;
+}
+
+.heads {
+    margin: 15px 0px 10px 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.points {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 2.5%;
+    padding-right: 15px;
+    color: #ffffff;
+}
+
+.registerBtn1 {
+    margin: 15px auto;
+}
+
+.block {
+    margin-bottom: 1rem;
+}
+
+/*footer*/
+
+.footer {
+    margin-top: 15px;
+}
+
+.footerLinks {
+    padding: 0.5rem 0;
+}
+
+.footerHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footerLogo {
+    width: 7%;
+}
+
+.footerDesc {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.footerHeadTxt {
+    font-weight: 700;
+    font-size: 11.7076px;
+    line-height: 14px;
+
+    color: #ffffff;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerOption {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+
+    color: #ffffff;
+}
+
+.line2 {
+    margin-bottom: 10%;
+}
+
+/*footer ends*/
+
+@media only screen and (min-width: 1024px) {
+    .nav {
+      margin: 0 5%;
+    }
+  
+    .logo {
+      width: 2.5%;
+    }
+  
+    .topic {
+      font-weight: 700;
+      font-size: 20.5739px;
+      line-height: 25px;
+      /* identical to box height */
+  
+  
+      color: #ffffff;
+    }
+  
+    .topicHead {
+      font-size: 100%;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+  
+      color: #ffffff;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .navOptions {
+        display: none;
+    }
+  
+    .navOptions1 {
+      display: flex;
+      align-items: center;
+      margin: auto 0 auto auto;
+      color: #ffffff;
+    }
+  
+    .navOption1 {
+      padding: 0 3rem;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .workshopName {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        text-transform: uppercase;
+        margin-top: 15px;
+        color: #ffffff;
+    }
+
+    .workshopDesc {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 3rem;
+        color: #ffffff;
+    }
+
+    .workshopDesc1 {
+        font-weight: 600;
+        font-size: 19.614px;
+        line-height: 24px;
+        margin-bottom: 2rem;
+        color: #ffffff;
+        margin-left: 0px;
+    }
+
+    .registerBtn {
+        font-family: 'Montserrat';
+        background: linear-gradient(149.3deg, #6B2BB7 5.93%, #150B54 91.53%);
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        color: #ffffff;
+    }
+
+    .leftBlock {
+        width: 35%;
+    }
+
+    .block {
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .rightBlock {
+        margin: 0 auto;
+        width: 65%;
+        margin-right: 3rem;
+    }
+
+    .detailsTxt {
+        font-weight: 600;
+        font-size: 19.9015px;
+        line-height: 24px;
+
+        color: #ffffff;
+    }
+
+    .heads {
+        font-weight: 600;
+        font-size: 26.152px;
+        line-height: 32px;
+        /* identical to box height */
+        color: #ffffff;
+        margin-top: 0;
+    }
+
+    .points {
+        font-weight: 600;
+        font-size: 19.614px;
+        line-height: 24px;
+        margin-bottom: 2rem;
+        color: #ffffff;
+    }
+
+    /*footer responsive*/
+
+    .footer {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .footerHeadTxt {
+        font-weight: 700;
+        font-size: 17.1956px;
+        line-height: 21px;
+        /* identical to box height */
+
+
+        color: #ffffff;
+    }
+
+    .footerDesc {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #ffffff;
+    }
+
+    .footerOption {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #ffffff;
+    }
+
+    .line2 {
+        margin-bottom: 6%;
+        width: 100%;
+    }
+  }

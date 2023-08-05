@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrations</title>
+  <link rel="stylesheet" href="regis.css">
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+  <div class="nav">
+    <img src="images\logo.svg" alt="logo" class="logo">
+    <a href="index.html">
+        <h1 class="topic">THREADS'23.</h1>
+    </a>
+    <img src="images\menu.svg" alt="menu" class="menu" onclick="menuSlide()">
+    <div class="navOptions" id="navOptions">
+        <img src="images\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
+        <div class="mobileA">
+            <a href="index.html" class="navOption mobileA1">HOME</a>
+            <a href="events.html" class="navOption mobileA1">EVENTS</a>
+            <a href="workshops.html" class="navOption mobileA1">WORKSHOPS</a>                
+        </div> 
+        <div class="threadsMenu">
+            <img src="images\logo.svg" alt="logo" class="logo menuLogo" style="color: #ffffff;">
+            <h1 class=" topic threadsMenuTxt">THREADS'23.</h1>
+        </div>                 
+    </div>
+
+    <div class="navOptions1" id="navOptions">
+        <img src="images\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
+        <a href="index.html" class="navOption1">HOME</a>
+        <a href="events.html" class="navOption1">EVENTS</a>
+        <a href="workshops.html" class="navOption1">WORKSHOPS</a>           
+    </div>
+</div>
+
+  <hr class="line">
+
+  <div class="hero">
+    <div class="Txt">
+      <h1 class="topic">REGISTRATION</h1>
+    </div>
+  
+    <div class="workshopsForm">
+      <form action="#" id="workshopRegis" class="workshopRegis">
+          <label for="canditateName">Name</label><br>
+          <input type="text" id="canditateName" class="inputBox" required><br>
+          <p class="hint">Note: The details you enter will be reflected in your ID and certificates. So, kindly enter correct details</p>
+          <br>
+  
+          <p class="label">College</p>
+          <div class="radioBtn">
+            <input type="radio" id="sct" name="Colleger" value ="Sona College Of Technology"onclick="hideDiv()">
+            <label for="others" class="workShopTxt" id="workShopTxtid">Sona College Of Technology</label><br><!--id="workShopTxtid-->
+          </div>
+  
+          <div class="radioBtn">
+            <input type="radio" id="others" name="Colleger" value ="Others"onclick="showDiv()">
+            <label for="others" class="workShopTxt">Others</label><br>
+          </div>
+          <br>
+  
+          <div class="hiddenDiv" id="hiddenDiv">
+            <label for="clgName">College Name</label>
+            <input type="text" id="clgName" class="inputBox">
+          </div>
+  
+          <label>Participation</label><br>
+          <div class="radioBtn">
+            <input type="checkbox" id="event" name="College" value="event">
+            <label for="rpa" class="workShopTxt">Event</label><br>
+          </div>
+          <div class="radioBtn"> 
+            <input type="checkbox" id="workshop" name="College" value="android" onclick="showDiv1()" class="workselect">
+            <label for="android" class="workShopTxt">Workshop</label><br>
+          </div>
+
+          <div class="hiddenDiv1" id="hiddenDiv1">
+            <br>
+            <label>Workshop</label><br>
+            <div class="radioBtn">
+              <input type="radio" id="rpa" name="workshop1" value="rpa"> <!--checked -->
+              <label for="rpa" class="workShopTxt" >Robotic Process Automation</label><br>
+            </div>
+            <div class="radioBtn"> 
+              <input type="radio" id="cyber" name="workshop1" value="cyber_security">
+              <label for="android" class="workShopTxt">Cyber Security</label><br>
+            </div>
+            <div class="radioBtn">
+              <input type="radio" id="web" name="workshop1" value="web_development">
+              <label for="iot" class="workShopTxt">Web Development</label><br>
+            </div>
+          </div>
+
+          <br>
+          <label for="dept" class="dept">Department</label><br>
+          <input type="text" required id="dept" class="inputBox"><br><br>
+  
+          <p class="label">Year</p>
+          <div class="Yrs">
+            <div class="YrRadio">
+              <input type="radio" id="firstYr" name="year" value="1">
+              <label for="firstYr" class="YrTxt">I</label>
+            </div>
+            <div class="YrRadio">
+              <input type="radio" id="secondYr" name="year" value="2">
+              <label for="secondYr" class="YrTxt">II</label>
+            </div>
+            <div class="YrRadio">
+              <input type="radio" id="thirdYr" name="year" value="3">
+              <label for="thirdYr" class="YrTxt">III</label>
+            </div>
+            <div class="YrRadio1">
+              <input type="radio" id="fourthYr" name="year" value="4">
+              <label for="fourthYr" class="YrTxt">IV</label>
+            </div>
+          </div>  
+  
+          <label for="contactNo">Contact Number</label><br>
+          <input type="tel" required id="contactNo" class="inputBox"><br><br>  
+                
+          <label for="email">Email ID</label><br>
+          <input type="email" required id="email" class="inputBox"><br>
+          <p class="hint">Note: If you are from Sona College, kindly enter your sonatech mail ID</p><br>
+
+          <br>
+          <button class="submitBtn" id="nextBtn">NEXT</button><br><br>
+      </form>
+  </div>
+
+  <div class="transId" id="transIdDiv">
+    <p class="hint"><p class="hint">Scan and pay through the QR Code or take a screenshot of the QR code and upload it in the UPI app to make the payment.</p><br></p>
+    <div class="qrCodes">
+      <img src="images\eventQr.png" alt="" class="qrImg1 qrImg" id="qrImg1" style="display: none;"><!--id="qrImg1"-->
+      <img src="images\workshopQr.png" alt="" class="qrImg2 qrImg" id="qrImg2" style="display:none"><!--id="qrImg2"-->
+      <img src="images\event+workshopQr.png" alt="" class="qrImg" id="qrImg" style="display: none;"> <!--id="qrImg"-->
+    </div>  
+    
+    <ul class="points">
+      <li>If you are using PhonePe, please enter your "UTR"</li>
+      <li>If you are using PayTM, please enter your "UPI reference number"</li>
+      <li>If you are using google pay, please enter your "Transaction ID"</li>
+    </ul>
+
+    <label for="transId">Transaction ID (12 digit) [Example : 3xxxxxxxxxxx]</label><br>
+    <input type="text" id="transId" class="inputBox"><br><br>
+    <button class="submitBtn" id="submitBtn">Submit</button>
+  </div>  
+</div>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyB0yNygL11li4PAXfNpmJNPmm6fP7pU3X8",
+    authDomain: "threads-23.firebaseapp.com",
+    databaseURL: "https://threads-23-default-rtdb.firebaseio.com",
+    projectId: "threads-23",
+    storageBucket: "threads-23.appspot.com",
+    messagingSenderId: "887344785570",
+    appId: "1:887344785570:web:95d87b2a8b731fe69f8ffb",
+    measurementId: "G-JPRSST3LB1"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+ </script>
+
+
+
+<script src="regis.js"></script> 
+</body>
+</html>

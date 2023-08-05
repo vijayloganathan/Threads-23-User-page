@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="images\logo.svg" alt="logo" class="logo">
+        <a href="index.html">
+            <h1 class="topic">THREADS'23.</h1>
+        </a>
+        <img src="images\menu.svg" alt="menu" class="menu" onclick="menuSlide()">
+        <div class="navOptions" id="navOptions">
+            <img src="images\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
+            <div class="mobileA">
+                <a href="index.html" class="navOption mobileA1">HOME</a>
+                <a href="events.html" class="navOption mobileA1">EVENTS</a>
+                <a href="workshops.html" class="navOption mobileA1">WORKSHOPS</a>                
+            </div> 
+            <div class="threadsMenu">
+                <img src="images\menuLogo.svg" alt="logo" class="logo menuLogo" style="color: #ffffff;">
+                <h1 class=" topic threadsMenuTxt">THREADS'23.</h1>
+            </div>                 
+        </div>
+
+        <div class="navOptions1" id="navOptions">
+            <img src="images\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
+            <a href="index.html" class="navOption1">HOME</a>
+            <a href="events.html" class="navOption1">EVENTS</a>
+            <a href="workshops.html" class="navOption1">WORKSHOPS</a>           
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="bodySec">
+        <div class="hero"> 
+            <h1 class="topicHero">EVENTS</h1>
+            <p class="Desc">Don't miss out on one of the most exciting events that you will ever experience. Get ready to be excited and enhanced.</p>
+            <a href="regis.html">
+                <button class="registerBtn">REGISTER EVENT</button>
+            </a>       
+        </div>
+    
+        <div class="eventTiles">
+            <h1 class="topicTile">TECHNICAL EVENTS</h1>
+        </div>
+
+        <p class="Desc" style="margin-left: 1rem; margin-bottom: 1rem;">Note: Click on the tiles to know more about the events</p>
+
+        <div class="tiles" class="webTiles">                
+            <img src="images\codigo.svg" alt="Codigo" onclick="location.assign('codigo.html')" class="tileImg">
+            <img src="images\ppt.svg" alt="ppt" onclick="location.assign('ppt.html')" class="tileImg">
+            <img src="images\techQuiz.svg" alt="techQuiz" onclick="location.assign('techQuiz.html')" class="tileImg">
+            <img src="images\techDebate.svg" alt="techDebate" onclick="location.assign('techDebate.html')" class="tileImg">
+            <img src="images\mismatch.svg" alt="mismatch" onclick="location.assign('mismatch.html')" class="tileImg">           
+        </div>
+
+        <div class="eventTiles">
+            <h1 class="topicTile">NON-TECHNICAL EVENTS</h1>
+        </div>
+
+        <div class="tiles" class="webTiles">
+            <img src="images\quizaholic.svg" alt="quizaholic" onclick="location.assign('quizaholic.html')" class="tileImg">
+            <img src="images\adZap.svg" alt="adZap" onclick="location.assign('adZap.html')" class="tileImg">
+            <img src="images\treasureHunt.svg" alt="treasureHunt" onclick="location.assign('treasureHunt.html')" class="tileImg">
+            <img src="images\miniGames.svg" alt="miniGames" onclick="location.assign('miniGames.html')" class="tileImg">
+            <img src="images\karaoke.svg" alt="jam" onclick="location.assign('karoke.html')" class="tileImg">
+        </div>
+
+        <hr class="line" style="margin-top: 2rem;">
+
+        <div class="bottom">
+            <h1 class="bottomHead">Register Now!!</h1><br>
+            <p class="bottomTxt">Don't miss out on one of the most exciting events that you will ever experience. Get ready to be excited and enhanced.</p>
+            <a href="regis.html">
+                <button class="registerBtn registerBtn1">REGISTER EVENT</button>
+            </a> 
+        </div>
+
+        <hr class="line line1">
+    </div>
+
+    <hr class="line">
+
+<div class="footer">
+        <div class="footerHead">
+            <img src="images\logo.svg" alt="logo" class="logo footerLogo">
+            <h1 class="footerHeadTxt">THREADS'23.</h1>
+        </div>            
+
+        <p class="footerDesc">A National Level Technical symposium hosted by the Department of Computer Science and Engineering in Sona College of Technology, Salem. It provides a dias to exhibit the talents of the student enthusiasts of numerous facets of computer science</p>
+
+        <hr class="line line2" style="margin-top: 1rem; margin-bottom: 0;">
+        
+        <div class="footerLinks">
+            <a href="https://instagram.com/sonathreads?igshid=OTJlNzQ0NWM=" style="display: flex;">
+                <img src="images\instagram.svg" alt="">
+                <p style="margin-left: 5px;" class="insta">sonathreads</p>
+            </a>
+            <p style="font-size: 12px;">threads.cse@sonatech.ac.in</p>
+        </div>
+
+        <hr class="line line2">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

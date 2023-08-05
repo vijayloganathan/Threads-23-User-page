@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://cdn.jsdelivr.net/gh/MohamedAthil/threadssvg@master/bg.svg');
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*nav*/
+
+.nav {
+    display: flex;
+    padding: 15px;
+}
+
+.logo {
+    margin-right: 15px;
+}
+
+.topic {
+    font-weight: 700;
+    font-size: 18.7112px;
+    line-height: 23px;
+    padding-top: 7px;
+    color: #ffffff;
+}
+
+.menu {
+    position: absolute;
+    right: 15px;
+}
+
+.navOptions {
+    display: none;
+    background: linear-gradient(149.3deg, #6B2BB7 5.93%, #150B54 91.53%);
+    color: #ffffff;
+    position: fixed;
+    z-index: 999;
+    width: 55%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+}
+
+.navOptions1 {
+    display: none;
+}
+
+.exit {
+    color: #ffffff;
+    position: absolute;
+    right: 5%;
+    margin-bottom: 20%;
+}
+
+.mobileA {
+    margin-top: 38%;
+    position: relative;
+}
+
+.mobileA1 {
+    display: block;
+    text-align: right;
+    margin-top: 15%
+}
+
+.threadsMenu {
+    margin-top: 185%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 6%
+}
+
+.threadsMenuTxt {
+    color: #ffffff;
+}
+
+/*nav ends*/
+
+.line {
+  margin: auto;
+  width: 90%;
+  border: 1.25px dashed #ffffff;
+
+  border: none;
+  height: 1px;
+  background: repeating-linear-gradient(90deg,#ffffff,#ffffff 6px,transparent 6px,transparent 12px);
+}
+
+/*hero*/
+
+.hero {
+    margin-left: 15px;
+}
+
+.topicHero {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.Desc {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 10px;
+    color: #ffffff;
+    padding-right: 15px;
+}
+
+.registerBtn {
+    font-family: 'Montserrat';
+    background: linear-gradient(94.02deg, #6B2BB7 12.9%, #0E005C 86.65%);
+    border-radius: 3px;
+    border: none;
+    padding: 0.7em 1.2em;
+    margin: 10px 0px;
+
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*tile*/
+
+.tilesHead {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    margin: 10px 0px 10px 15px;
+
+    color: #ffffff;
+}
+
+.tileImg {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.tiles {
+    display: grid;
+    justify-content: center;
+}
+
+.tiles1 {
+    display: none;
+}
+
+.tile {
+    background: linear-gradient(149.3deg, #6B2BB7 5.93%, #150B54 91.53%);
+    border-radius: 16px;
+    width: 95%;
+    margin-left: 2.5%;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.workshopName {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+
+    color: #ffffff; 
+}
+
+.workshopDesc {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+
+    color: #ffffff;
+}
+
+.tileTxt {
+    margin: auto;
+    padding-right: 5px;
+}
+
+.bottom {
+    display: none;
+}
+
+/*footer*/
+
+.footer {
+    margin-top: 15px;
+}
+
+.footerLinks {
+    padding: 0.5rem 0;
+}
+
+.footerHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footerLogo {
+    width: 7%;
+}
+
+.footerDesc {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.footerHeadTxt {
+    font-weight: 700;
+    font-size: 11.7076px;
+    line-height: 14px;
+
+    color: #ffffff;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerOption {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+
+    color: #ffffff;
+}
+
+.line2 {
+    margin-bottom: 10%;
+}
+
+/*footer ends*/
+
+@media only screen and (min-width: 1024px) {
+    .nav {
+      margin: 0 5%;
+    }
+  
+    .logo {
+      width: 2.5%;
+    }
+  
+    .topic {
+      font-weight: 700;
+      font-size: 20.5739px;
+      line-height: 25px;
+      /* identical to box height */
+  
+  
+      color: #ffffff;
+    }
+  
+    .topicHead {
+      font-size: 100%;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+  
+      color: #ffffff;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .navOptions {
+        display: none;
+    }
+  
+    .navOptions1 {
+      display: flex;
+      align-items: center;
+      margin: auto 0 auto auto;
+      color: #ffffff;
+    }
+  
+    .navOption1 {
+      padding: 0 3rem;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  
+    .navOption {
+      padding: 0 3rem;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+  
+      color: #ffffff;
+    }
+  
+    .bodySec {
+        margin: 0 5%;
+    }
+
+    .topicHero {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: 1rem;
+        color: #ffffff;
+    }
+
+    .Desc {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #ffffff;
+    }
+
+    .registerBtn {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0.5em 1.5em;
+        color: #ffffff;
+    }
+
+    .tilesHead {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: 25px;
+        color: #ffffff;
+    }
+
+    .tiles {
+        display: flex;
+        margin: 1rem auto;
+        justify-content: center;
+        margin-right: 5%;
+    }
+
+    .tile {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .bottomDesc {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+
+        color: #ffffff;
+    }
+
+    .registerBtn1 {
+        margin: 2rem auto 1rem;
+    }
+
+    .bottom {
+        display: block;
+    }   
+    
+    /*footer responsive*/
+
+    .footer {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .footerHeadTxt {
+        font-weight: 700;
+        font-size: 17.1956px;
+        line-height: 21px;
+        /* identical to box height */
+
+
+        color: #ffffff;
+    }
+
+    .footerDesc {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #ffffff;
+    }
+
+    .footerOption {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #ffffff;
+    }
+
+    .line2 {
+        margin-bottom: 6%;
+        width: 100%;
+    }
+
+    /*tiles*/
+
+    .tiles1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .tiles {
+        display: none;
+    }
+
+    .tileImg1 {
+        margin: 0 1% 1rem 1%;
+        width: 25%;
+    }
+  }

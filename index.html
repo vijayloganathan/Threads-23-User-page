@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thread'23 - Home</title>
+
+        <!-- og starts-->
+
+        <meta property="og:title" content="Threads'23: Annual Symposium at Sona College of Technology">
+        <meta property="og:description" content="Join us for Threads'23, the annual symposium at Sona College of Technology. This year's theme is [insert theme here].">
+        <meta property="og:url" content="https://sonathreads.in/">
+        <meta property="og:image" content="https://sonathreads.in/images/threads23-banner.jpg">
+        <meta property="og:type" content="website">
+
+
+        <!-- og ends-->
+
+        <!-- favicon starts-->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+        <!-- favicon ends-->
+
+        <link rel="stylesheet" href="style.css">
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+
+    </head>
+    <body>
+        <div class="nav">
+            <img src="images\logo.svg" alt="logo" class="logo">
+            <a href="index.html">
+                <h1 class="topic">THREADS'23.</h1>
+            </a>
+            <img src="images\menu.svg" alt="menu" class="menu" onclick="menuSlide()">
+            <div class="navOptions" id="navOptions">
+                <img src="images\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
+                <div class="mobileA">
+                    <a href="index.html" class="navOption mobileA1">HOME</a>
+                    <a href="events.html" class="navOption mobileA1">EVENTS</a>
+                    <a href="workshops.html" class="navOption mobileA1">WORKSHOPS</a>
+                    <a href="regis.html" class="navOption mobileA1">REGISTER</a>
+                    <a href="#" class="navOption mobileA1" id="downloadcardbtn1">DOWNLOAD ID</a>        
+                </div>
+                <div class="threadsMenu">
+                    <img src="images\logo.svg" alt="logo" class="logo menuLogo" style="color: #ffffff;">
+                    <h1 class=" topic threadsMenuTxt">THREADS'23.</h1>
+                </div>                 
+            </div>
+    
+            <div class="navOptions1" id="navOptions">
+                <img src="images\exit.svg" alt="exit" class="exit" id="exit" onclick="closeSlide()">
+                <a href="index.html" class="navOption1">HOME</a>
+                <a href="events.html" class="navOption1">EVENTS</a>
+                <a href="workshops.html" class="navOption1">WORKSHOPS</a>   
+                <a href="regis.html" class="navOption1">REGISTER</a>
+                <button class="register1" id="download">
+                    <span class="btnTxt"><span class="regisTxt" id="downloadcardbtn">DOWNLOAD-ID</span></span>
+                </button> 
+            </div>
+        </div>
+
+        <hr class="line">
+
+        <div class="hero">       
+            <h3 class="clgName">SONA COLLEGE OF TECHNOLOGY</h3>
+            <video src="https://cdn.jsdelivr.net/gh/viruchith/Misc/mob-output.webm" class="ad" autoplay loop muted></video>
+            <video src="https://cdn.jsdelivr.net/gh/viruchith/Misc/web-output.webm" class="adDesk" autoplay loop muted></video>
+        </div>
+
+        <hr class="line">
+
+        <div class="eventSec">
+            <img src="images\homeFiller1.svg" alt="" class="homeFiller">
+            <img src="images\homeFiller1.1.svg" alt="" class="homeFiller1">
+            <div class="adRight1">
+                <h2 class="adTxt1" style="display: block !important;">UNLOCK YOUR <br><span class="catchyTxt">POTENTIAL</span></h2>
+                <p class="adDesc1">JOIN US AND UNLOCK YOUR POTENTIAL,<br> EVENT REGISTRATION IS OPEN NOW!!!</p>
+                <a href="events.html">
+                    <button class="register">
+                        <span class="btnTxt"><span class="regisTxt">REGISTER EVENT</span></span>
+                    </button>
+                </a>
+            </div>            
+        </div>
+
+        <hr class="line">
+
+        <div class="workshopSec">
+            <div class="left">
+                <h1 class="adTxt1">EMPOWER YOUR FUTURE WITH HANDS-ON <span class="catchyTxt">LEARNING</span></h1>
+                <p class="adDesc1">JOIN US & EMPOWER YOUR FUTURE WITH HANDS-ON LEARNING <br> WORKSHOP REGISTRATION IS OPEN NOW!!</p>
+                <a href="workshops.html">
+                    <button class="register">
+                        <span class="btnTxt"><span class="regisTxt">REGISTER WORKSHOP</span></span>
+                    </button>
+                </a>
+            </div>
+            <div class="right">
+                <img src="images\homeFiller2.svg" alt="" class="homeFiller">
+                <img src="images\homeFiller1.2.svg" alt="" class="homeFiller1">
+            </div>
+        </div>
+
+        <hr class="line">
+        
+        <p class="onSpot">On spot registration available</p>
+
+        <hr class="line">
+
+        <div class="download">
+            <p class="idTxt">DOWNLOAD YOUR ID CARD HERE</p>
+            <button class="register1" id="download">
+                <span class="btnTxt"><span class="regisTxt" id="downloadcardbtn2">DOWNLOAD-ID</span></span>
+            </button>
+        </div>
+
+        <hr class="line">
+
+        <div class="about">
+            <h1 class="aboutHead">ABOUT US</h1>
+            <p class="aboutDesc"><span class="catchyTxt catchyTxt1">THREADS</span> - Our symposium comprises of 3 workshops which will provide hands-on learning experience on latest technologies. And, there are 5 technical events & 5 non-technical events ensuring a diversified learning experience filled with fun and interactions. Winners of the respective events will be honoured with winning certificates and rewards. And every participant will get a participation certificate and a whole bag of valuable experience. Refreshments will be provided for the participants</p><br>
+            <p class="aboutDesc"><span class="catchyTxt catchyTxt1">Department of CSE</span> - Provides knowledge on various current trend and demanding technologies and helps the students to implement them in reality. We provide complete support and freedom to students to focus and grow on their interested disciplines. And we organize various events, workshops and guest lectures to provide our students a wholistic development. We also encourage our students to provide solutions for the modern real-time problems and to benefit the society</p>
+
+                <div class="credits">
+                    <u><h1 class="creditsHead">DEVELOPMENT TEAM</h1></u>
+                    <u><h2 class="creditsHead1">UI/UX</h2></u>
+                    <p class="creditName">Mohamed Athil H</p>
+                    <p class="creditName">Kesavan K</p>
+                    <u><h2 class="creditsHead1">FRONT-END</h2></u>
+                    <p class="creditName">Monish Prasad V</p>
+                    <u><h2 class="creditsHead1">BACK-END</h2></u>
+                    <p class="creditName">Vijay L</p>
+                    <p class="creditName">Sakthi Bala V</p>
+                    <p class="creditName">Sneha T</p>
+                    <p class="creditName">Subhiksha U</p>
+                    <p class="creditName">Yagavi A</p>
+                    <p class="creditName">Aswin S</p>
+                </div>
+                
+        </div>
+
+        <hr class="line">
+
+        <div class="allLogos">
+            <div class="logos">
+                <img src="images\csi.svg" alt="csi" class="logo1">
+                <img src="images\iste.svg" alt="iste" class="logo1">
+                <img src="images\cc.svg" alt="cc" class="logo1">
+                <img src="images\dc.svg" alt="dc" class="logo1">
+            </div>
+    
+            <hr class="line line1">
+    
+            <div class="logos1">
+                <img src="images\sct.svg" alt="" class="sct">
+                <div class="logoBox">
+                    <img src="images\logo.svg" alt="logo" class="logo2">
+                    <h1 class="topic1">THREADS'23.</h1>
+                </div>
+            </div>
+        </div>
+
+        <hr class="line">
+
+        <hr class="line">
+
+<div class="footer">
+            <div class="footerHead">
+                <img src="images\logo.svg" alt="logo" class="logo footerLogo">
+                <h1 class="footerHeadTxt">THREADS'23.</h1>
+            </div>            
+    
+            <p class="footerDesc">A National Level Technical symposium hosted by the Department of Computer Science and Engineering in Sona College of Technology, Salem. It provides a dias to exhibit the talents of the student enthusiasts of numerous facets of computer science</p>
+    
+            <hr class="line line2" style="margin-top: 1rem; margin-bottom: 0;">
+            
+            <div class="footerLinks">
+                <a href="https://instagram.com/sonathreads?igshid=OTJlNzQ0NWM=" style="display: flex;">
+                    <img src="images\instagram.svg" alt="">
+                    <p style="margin-left: 5px;" class="insta">sonathreads</p>
+                </a>
+                <p style="font-size: 12px;">threads.cse@sonatech.ac.in</p>
+            </div>
+    
+            <hr class="line line2">
+        </div>
+
+        <style>
+           #id_card {
+                position: relative;
+                width: 1550px;
+                height: 2347.85px;
+                border: 1px solid black;
+            }
+    
+            #id_card img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+    
+        
+            #userid{
+                position: absolute;
+                top: 1100.3px;
+                margin-left:50%;
+                transform: translateX(-50%);
+                font-family: Montserrat;
+                font-size: 100.32px;
+                text-align: center;
+                color: black;
+                white-space: nowrap;
+            }
+            #rightitems{
+                align-items: baseline;
+            }
+            #nameid{
+                position: absolute;
+                top: 1300.3px;
+                margin-left:50%;
+                transform: translateX(-50%);
+                font-family: Montserrat;
+                font-size: 60.32px;
+                text-align: center;
+                color: black;
+                white-space: nowrap;
+            }
+            #eventid{
+                position: absolute;
+                top: 1450.3px;
+                margin-left:50%;
+                transform: translateX(-50%);
+                font-family: Montserrat;
+                font-size: 60.32px;
+                text-align: center;
+                color: black;
+                white-space: nowrap;
+            }
+            #workshopid{
+                position: absolute;
+                top: 1600.3px;
+                margin-left:50%;
+                transform: translateX(-50%);
+                font-family: Montserrat;
+                font-size: 60.32px;
+                text-align: center;
+                color: black;
+                white-space: nowrap;
+            }
+            #deptid{
+                position: absolute;
+                top: 1750.3px;
+                margin-left:50%;
+                transform: translateX(-50%);
+                font-family: Montserrat;
+                font-size: 60.32px;
+                text-align: center;
+                color: black;
+                white-space: nowrap;
+            }
+            #collegeid{
+                position: absolute;
+                top: 1900.3px;
+                margin-left:50%;
+                transform: translateX(-50%);
+                font-family: Montserrat;
+                font-size: 60.32px;
+                text-align: center;
+                color: black;
+                white-space: nowrap;
+            }       
+        </style><br><br><br><br><br>
+        <div id="id_card" class="card" style="display: none;">
+            <img src="idcard.jpg" alt="ID Card Image">
+            <div id="userid"></div>
+            <div id="nameid"></div>
+            <div id="eventid"></div>
+            <div id="workshopid"></div>
+            <div id="deptid"></div>
+            <div id="collegeid"></div>
+        </div>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyB0yNygL11li4PAXfNpmJNPmm6fP7pU3X8",
+        authDomain: "threads-23.firebaseapp.com",
+        databaseURL: "https://threads-23-default-rtdb.firebaseio.com",
+        projectId: "threads-23",
+        storageBucket: "threads-23.appspot.com",
+        messagingSenderId: "887344785570",
+        appId: "1:887344785570:web:95d87b2a8b731fe69f8ffb",
+        measurementId: "G-JPRSST3LB1"
+      };
+    
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+     </script>
+    <script src="app.js"></script>     
+    <script src="index.js"></script>
+    </body>
+</html>

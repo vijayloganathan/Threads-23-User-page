@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://cdn.jsdelivr.net/gh/MohamedAthil/threadssvg@master/bg.svg');
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*nav*/
+
+.nav {
+    position: static;
+    display: flex;
+    padding: 15px;
+}
+
+.logo {
+    margin-right: 15px;
+}
+
+.topic {
+    font-weight: 700;
+    font-size: 18.7112px;
+    line-height: 23px;
+    padding-top: 7px;
+    color: #ffffff;
+}
+
+.menu {
+    position: absolute;
+    right: 15px;
+}
+
+.navOptions {
+    display: none;
+    background: linear-gradient(149.3deg, #6B2BB7 5.93%, #150B54 91.53%);
+    color: #ffffff;
+    position: fixed;
+    z-index: 999;
+    width: 55%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 1em;
+}
+
+.navOptions1 {
+    display: none;
+}
+
+.exit {
+    color: #ffffff;
+    position: absolute;
+    right: 5%;
+    margin-bottom: 20%;
+}
+
+.mobileA {
+    margin-top: 38%;
+    position: relative;
+}
+
+.mobileA1 {
+    display: block;
+    text-align: right;
+    margin-top: 15%
+}
+
+.threadsMenu {
+    margin-top: 185%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 6%
+}
+
+.threadsMenuTxt {
+    color: #ffffff;
+}
+
+/*nav ends*/
+
+.line {
+  margin: auto;
+  width: 90%;
+  border: 1.25px dashed #ffffff;
+
+  border: none;
+  height: 1px;
+  background: repeating-linear-gradient(90deg,#ffffff,#ffffff 6px,transparent 6px,transparent 12px);
+}
+
+/*hero*/
+
+.hero {
+    margin-left: 15px;
+}
+
+.topicHero {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.Desc {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 10px;
+    color: #ffffff;
+    padding-right: 15px;
+}
+
+.registerBtn {
+    font-family: 'Montserrat';
+    background: linear-gradient(94.02deg, #6B2BB7 12.9%, #0E005C 86.65%);
+    border-radius: 3px;
+    border: none;
+    padding: 0.7em 1.2em;
+    margin: 10px 0px;
+
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.webTiles {
+   margin-right: 5%;
+}
+
+.tileImg {
+    margin: 5px;
+}
+
+/*eventTiles*/
+
+.eventTiles {
+    margin-left: 15px;
+}
+
+.topicTile {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.tiles {
+    text-align: center;
+}
+
+.tileRow {
+    display: flex;
+}
+
+.tileRow1 {
+    margin-right: 1rem;
+}
+
+.tile {
+    background: linear-gradient(149.3deg, #6B2BB7 5.93%, #150B54 91.53%);
+    border-radius: 16px;
+    margin: 1em 1em 1em 0;
+    padding: 1rem 0;
+}
+
+.tile1 {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.tileName {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.tileDesc {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.tileTxt {
+    padding: 1rem;
+}
+
+.prompt {
+    padding: 2.5rem 1.6rem 0rem 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.promptTxt {
+    margin: 3rem 0 0.5rem 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #ffffff;
+}
+
+.promptDesc {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.promptBtn {
+    background: linear-gradient(94.02deg, #6B2BB7 12.9%, #0E005C 86.65%);
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none;
+    padding: 0.7em 1.2em;
+    color: #ffffff;
+    margin: 1rem auto;
+}
+
+.bottom {
+    margin: 15px auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.bottomHead {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.bottomTxt {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.registerBtn1 {
+    margin: 1rem auto;
+}
+
+.line1 {
+    margin-bottom: 1rem;
+}
+
+/*footer*/
+
+.footer {
+    margin-top: 15px;
+}
+
+.footerLinks {
+    padding: 0.5rem 0;
+}
+
+.footerHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footerLogo {
+    width: 7%;
+}
+
+.footerDesc {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.footerHeadTxt {
+    font-weight: 700;
+    font-size: 11.7076px;
+    line-height: 14px;
+
+    color: #ffffff;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerOption {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+
+    color: #ffffff;
+}
+
+.line2 {
+    margin-bottom: 10%;
+}
+
+/*footer ends*/
+
+/*responsive*/
+
+@media only screen and (min-width: 1024px) {
+    .nav {
+      margin: 0 5%;
+    }
+  
+    .logo {
+      width: 2.5%;
+    }
+  
+    .topic {
+      font-weight: 700;
+      font-size: 20.5739px;
+      line-height: 25px;
+      /* identical to box height */
+  
+      color: #ffffff;
+    }
+
+    .topicHero, .topicTile {
+        margin-top: 2%;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #ffffff;
+    }
+  
+    .topicHead {
+      font-size: 100%;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      color: #ffffff;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .navOptions {
+        display: none;
+    }
+  
+    .navOptions1 {
+      display: flex;
+      align-items: center;
+      margin: auto 0 auto auto;
+      color: #ffffff;
+    }
+  
+    .navOption1 {
+      padding: 0 3rem;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .bodySec {
+        margin: 0 5%;
+    }
+
+    .topicTtile {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #ffffff;
+    }
+
+    .prompt {
+        display: none;
+    }
+
+    .tiles {
+        display: flex;
+    }
+
+    .Desc {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #ffffff;
+    }
+
+    .registerBtn {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        color: #ffffff;
+        margin-bottom: 25px;
+    }
+
+    .tileName {
+        font-weight: 600;
+        font-size: 23.5062px;
+        line-height: 29px;
+        /* identical to box height */
+
+
+        color: #ffffff;
+    }
+
+    .tileDesc {
+        font-weight: 600;
+        font-size: 11.7531px;
+        line-height: 14px;
+        text-align: center;
+        width: 90%;
+        color: #ffffff;
+    }
+
+    .tile1 {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .bottom {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    .bottomTxt {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+
+        color: #ffffff;
+    }
+
+    .registerBtn1 {
+        margin: 2rem auto;
+    }
+
+    /*footer responsive*/
+
+    .footer {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .footerHeadTxt {
+        font-weight: 700;
+        font-size: 17.1956px;
+        line-height: 21px;
+        /* identical to box height */
+
+
+        color: #ffffff;
+    }
+
+    .footerDesc {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #ffffff;
+    }
+
+    .footerOption {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #ffffff;
+    }
+
+    .line2 {
+        margin-bottom: 6%;
+        width: 100%;
+    }
+
+    /*tiles*/
+
+    .tileImg {
+        width: 20%;
+    }
+}
